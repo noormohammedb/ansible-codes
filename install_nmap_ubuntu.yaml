@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks: 
+
+   - name: installing nmap
+     apt: 
+       name: nmap
+       state: latest
+
