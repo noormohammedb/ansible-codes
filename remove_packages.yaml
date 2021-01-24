@@ -10,12 +10,12 @@
     when: ansible_distribution in ["Ubuntu","Debian"]
 
   - name: remove apache2 package
-    apt: 
+    apt:
       name: nginx
       state: absent
     when: ansible_distribution in ["Ubuntu","Debian"]
 
   - name: remove php support for apache
-    apt: 
+    apt:
       name: libapache2-mod-php
       state: absent
