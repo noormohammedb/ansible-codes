@@ -8,4 +8,3 @@
      apt:
       name: nmap
       state: latest
-
